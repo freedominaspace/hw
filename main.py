@@ -1,16 +1,11 @@
 #1-1.2
 
 name = input("Input your full name?")
-age = str(input("How old are you?"))
+age = input("age?")
 ques = input("Are u a man?")
-ans = ('woman', 'man')[ques == "yes"]
-man = "male"
-woman = "female"
-yes = True
-no = False
+ans = ('woman', 'man')[ques == "yes" ]
 
-print("You are " + name + ", Вам " + age + "лет, " + ans + " " + ques)
-
+print("You are " + name + ", Вам " + f"{int(age)} " + "лет, " + ans + " " + ques)
 
 
 #2.1
@@ -25,8 +20,10 @@ print(a, b)
 
 a = input("Введите 1 число ")
 b = input("Введите 2 число ")
-print(a, b)
 
-c = [b, a]
-print(c)
+a = a + b
+b = a - b
+a = a - b
+
+print(a, b)
 
